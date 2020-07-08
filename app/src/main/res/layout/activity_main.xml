@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:textStyle="bold"  />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result" >
+
+        <TextView
+            android:id="@+id/nameO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameV"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+
+        <TextView
+            android:id="@+id/nameV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameC"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameO"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+        <TextView
+            android:id="@+id/nameC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameH"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameV"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+        <TextView
+            android:id="@+id/nameH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameI"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameC"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+        <TextView
+            android:id="@+id/nameI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameN"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameH"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+        <TextView
+            android:id="@+id/nameN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameNn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameI"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+        <TextView
+            android:id="@+id/nameNn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameIi"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameN"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+        <TextView
+            android:id="@+id/nameIi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameK"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameNn"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+        <TextView
+            android:id="@+id/nameK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameOo"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameIi"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+        <TextView
+            android:id="@+id/nameOo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameVv"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameK"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+        <TextView
+            android:id="@+id/nameVv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameOo"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fourLinear" >
+
+        <TextView
+            android:id="@+id/nameOdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameVdown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameVdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameCdown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameOdown"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameCdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameHdown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameVdown"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameHdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameIdown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameCdown"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameIdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameNdown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameHdown"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameNdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameNndown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameIdown"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameNndown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameIidown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameNdown"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameIidown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameKdown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameNndown"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameKdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameOodown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameIidown"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameOodown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nameVvdown"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameKdown"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameVvdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/nameOodown"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/constraint"
+        android:layout_above="@id/constraintDown"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+        <TextView
+            android:id="@+id/nameOleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toTopOf="@id/constraintLeft"
+            app:layout_constraintBottom_toTopOf="@+id/nameVleft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+        <TextView
+            android:id="@+id/nameVleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameOleft"
+            app:layout_constraintBottom_toTopOf="@+id/nameCleft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+        <TextView
+            android:id="@+id/nameCleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameVleft"
+            app:layout_constraintBottom_toTopOf="@+id/nameHleft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/nameHleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameCleft"
+            app:layout_constraintBottom_toTopOf="@+id/nameIleft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/nameIleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameHleft"
+            app:layout_constraintBottom_toTopOf="@+id/nameNleft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+           />
+        <TextView
+            android:id="@+id/nameNleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameIleft"
+            app:layout_constraintBottom_toTopOf="@+id/nameNnleft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+        <TextView
+            android:id="@+id/nameNnleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameNleft"
+            app:layout_constraintBottom_toTopOf="@+id/nameIileft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+        <TextView
+            android:id="@+id/nameIileft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameNnleft"
+            app:layout_constraintBottom_toTopOf="@+id/nameKleft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+        <TextView
+            android:id="@+id/nameKleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameIileft"
+            app:layout_constraintBottom_toTopOf="@+id/nameOoleft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            android:id="@+id/nameOoleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameKleft"
+            app:layout_constraintBottom_toTopOf="@+id/nameVvleft"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+        <TextView
+            android:id="@+id/nameVvleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/nameOoleft"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/constraintDown"
+        android:layout_below="@id/constraint"
+        android:layout_toStartOf="@id/btnPlus"
+
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+        <TextView
+            android:id="@+id/nameORight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameVRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraintRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameVRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameCRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameORight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameCRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameHRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameVRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameHRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameIRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameCRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameIRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameNRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameHRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameNRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameNnRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameIRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameNnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameIiRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameNRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameIiRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameKRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameNnRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameKRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameOoRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameIiRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameOoRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nameVvRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameKRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/nameVvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameOoRight"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/UpLinear"
+        android:layout_toLeftOf="@id/constraintRight"
+        android:layout_below="@id/constraint"
+        android:layout_toRightOf="@id/constraintLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClearClick"
+            android:padding="25dp"
+            android:text="C"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnNegative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNegativeNumClick"
+            android:padding="25dp"
+            android:text="+/-"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onOperationClick"
+            android:padding="25dp"
+            android:text="%"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/FirstLinear"
+        android:layout_toLeftOf="@id/constraintRight"
+        android:layout_below="@id/UpLinear"
+        android:layout_toRightOf="@id/constraintLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="7"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="8"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="9"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLinear"
+        android:layout_toStartOf="@id/constraintRight"
+        android:layout_below="@id/FirstLinear"
+        android:layout_toEndOf="@id/constraintLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="4"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="5"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="6"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ThreeLinear"
+        android:layout_toLeftOf="@id/constraintRight"
+        android:layout_below="@id/secondLinear"
+        android:layout_toRightOf="@id/constraintLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="1"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="2"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="3"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourLinear"
+        android:layout_toLeftOf="@id/constraintRight"
+        android:layout_below="@id/ThreeLinear"
+        android:layout_toRightOf="@id/constraintLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="0"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnDecPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:padding="25dp"
+            android:text="."
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constraint"
+       android:layout_alignParentEnd="true"
+        android:onClick="onOperationClick"
+        android:padding="25dp"
+        android:text="/"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnMult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDiv"
+        android:layout_alignParentRight="true"
+        android:onClick="onOperationClick"
+        android:padding="25dp"
+        android:text="*"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMult"
+        android:layout_alignParentRight="true"
+        android:onClick="onOperationClick"
+        android:padding="25dp"
+        android:text="+"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPlus"
+        android:layout_alignParentRight="true"
+        android:onClick="onOperationClick"
+        android:padding="25dp"
+        android:text="-"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnEquals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMinus"
+        android:layout_alignParentRight="true"
+        android:onClick="onResultClick"
+        android:padding="25dp"
+        android:text="="
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
